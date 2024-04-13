@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom/client';
 
-const container = (
+const Container = () => (
     <div id="container">
         <h1 className="title" key="h1">
             h1 heading
@@ -16,4 +16,4 @@ const container = (
 );
 
 const root = ReactDom.createRoot(document.getElementById('root'));
-root.render(container);
+root.render(<Container />);
