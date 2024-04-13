@@ -29,4 +29,4 @@ Calls the Component and the value returned by the component is rendered.
 
 ### {&lt;TitleComponent&gt;&lt;/TitleComponent&gt;}
 
-Create a React element with type titleComponent
+It also calls the component
