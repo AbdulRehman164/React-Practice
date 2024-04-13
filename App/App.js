@@ -1,25 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDom from 'react-dom/client';
 
-const heading = React.createElement(
+const h1 = React.createElement(
     'h1',
-    {
-        id: 'main-heading',
-        style: { fontFamily: 'monospace' },
-    },
-    'Hello React!'
+    { className: 'title', key: 'h1' },
+    'h1 heading'
 );
-
-const heading2 = React.createElement(
+const h2 = React.createElement(
     'h2',
-    {
-        id: 'main-heading2',
-        style: { fontFamily: 'monospace' },
-    },
-    'Hello React!'
+    { className: 'title', key: 'h2' },
+    'h2 heading'
+);
+const h3 = React.createElement(
+    'h3',
+    { className: 'title', key: 'h3' },
+    'h3 heading'
 );
 
-const container = React.createElement('div', {}, [heading, heading2]);
+const container = React.createElement('div', { id: 'container' }, [h1, h2, h3]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDom.createRoot(document.getElementById('root'));
 root.render(container);
